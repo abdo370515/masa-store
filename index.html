@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="middle-nav-co">
+        <div class="logo-co">
+            <img src="logo 6.png" alt="" class="logo">
+        </div>
+        <div class="nav">
+            <nav>
+                <ul class="m-n-ul">
+                    <a href="#" class="m-n-a"><h3 class="m-n-h4">home</h3></a>
+                    <a href="buy-main.html" class="m-n-a"><h3 class="m-n-h4">product</h3></a>
+                    <a href="buy page .html" class="m-n-a"><h3 class="m-n-h4">about</h3></a>
+                    <a href="#" class="m-n-a"><h3 class="m-n-h4">contact</h3></a>
+                </ul>
+            </nav>
+        </div>
+       <div class="search-container">
+
+
+
+
+            <script>
+                            
+
+            function searchFunction() {
+                let input = document.getElementById('searchBox').value.toLowerCase();
+                let resultsDiv = document.getElementById('results');
+                resultsDiv.innerHTML = '';
+
+                let filteredData = data.filter(item => item.toLowerCase().includes(input));
+
+                if (filteredData.length > 0) {
+                    filteredData.forEach(item => {
+                        let p = document.createElement('p');
+                        p.textContent = item;
+                        resultsDiv.appendChild(p);
+                    });
+                } else {
+                    resultsDiv.textContent = 'No results found.';
+                }
+            }
+
+            </script>
+                        <input type="text" id="searchBox" class="search-box" placeholder="Type to search...">
+                        <button class="search-button" onclick="searchFunction()">
+                            <img src="search_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 (1).png" alt="Search">
+                        </button>
+                        <div id="results" class="search-results"></div>
+        </div>
+        <div class="icon-co">
+                <div class="menu-container">
+                    <button class="menu-button" onclick="toggleMenu()"><img src="blank-profile-picture-973460_640.png" alt="" class="icon"></button>
+                    <div id="dropdown" class="dropdown-menu">
+                        <a href="#home" class="email">ahmedhamedysa@gmail.com</a>
+                        <div class="account-img-co">
+                            <a href="#about" class="profile-img-a"><img src="1.webp" alt="" class="profile-img"></a>
+                        </div>
+                        <div class="account-btn-co">
+                           <a href="#"><button class="account-btn">Manage your account</button></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<div class="main">
+    <div class="left">
+        <h1 class="header">Masa store </h1>
+        <h2 class="s-header">The Best Furniture Ever</h2>
+        <div class="btn-co">
+            <a href="buy page .html"><button class="btn">Shop now</button></a>
+        </div>
+    </div>
+    <div class="right">
+        <img src="chair-p.png" alt="" class="main-img">
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
